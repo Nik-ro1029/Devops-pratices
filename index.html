@@ -17,6 +17,10 @@
 <body>
     <h1>Save User</h1>
 
+    {% if error %}
+    <p class="error" role="alert">{{ error }}</p>
+    {% endif %}
+
     <form action="/api" method="post">
         <label>
             Name
