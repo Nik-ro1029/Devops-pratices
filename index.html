@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save User</title>
+    <style>
+        body { font-family: sans-serif; max-width: 480px; margin: 40px auto; padding: 0 20px; }
+        label { display: block; margin: 12px 0; }
+        input { display: block; margin-top: 4px; padding: 8px; width: 100%; box-sizing: border-box; }
+        button { padding: 8px 16px; cursor: pointer; }
+        #message { margin-top: 20px; font-weight: bold; }
+        .error { color: #b00020; }
+        .success { color: #087f23; }
+    </style>
+</head>
+<body>
+    <h1>Save User</h1>
+
+    {% if error %}
+    <p class="error" role="alert">{{ error }}</p>
+    {% endif %}
+
+    <form action="/api" method="post">
+        <label>
+            Name
+            <input type="text" name="name" required>
+        </label>
+        <br>
+        <label>
+            Age
+            <input type="number" name="age" min="0" required>
+        </label>
+        <br>
+        <button type="submit">Save</button>
+    </form>
+
+</body>
+</html>
