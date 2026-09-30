@@ -59,7 +59,7 @@ def api():
 	try:
 		users.insert_one({"name": name, "age": age})
 	except PyMongoError as error:
-		return render_form(f"Unable to save data: {error}"), 503
+		return render_form(f"Unable to save data: {error}"), 506
 
 	return redirect(url_for("success"))
 
