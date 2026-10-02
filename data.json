@@ -1,14 +1,2 @@
-[
-  {
-    "name": "Ada",
-    "age": 36
-  },
-  {
-    "name": "Grace",
-    "age": 28
-  },
-  {
-    "name": "Aadhya",
-    "age": 2
-  }
-]
+{"anagha": {"age": 25, "city": "New York", "profession": "Software Engineer"}}
+{"Aadhya": {"age": 30, "city": "Los Angeles", "profession": "Data Scientist"}}
