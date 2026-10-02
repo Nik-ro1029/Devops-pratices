@@ -1,2 +1,7 @@
 {"anagha": {"age": 25, "city": "New York", "profession": "Software Engineer"}}
 {"Aadhya": {"age": 30, "city": "Los Angeles", "profession": "Data Scientist"}}
+{
+  "api_route": "/api/v1/data",
+  "status": "active",
+  "version": "2.0-rohith-new"
+}
